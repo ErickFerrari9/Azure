@@ -72,7 +72,7 @@ Clique em “+ Criar” > “Máquina Virtual”.
 🔹 3. Configurar a Instância da VM (Aba “Básico”)
 Preencha os seguintes campos:
 
-##Campo            | O que preencher
+## Campo            | O que preencher
 
 Assinatura         | Selecione sua conta/assinatura ativa
 
