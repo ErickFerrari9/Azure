@@ -75,12 +75,19 @@ Preencha os seguintes campos:
 ##Campo            | O que preencher
 
 Assinatura         | Selecione sua conta/assinatura ativa
+
 Grupo de Recursos  | Crie um novo ou escolha um existente
+
 Nome da VM         | Ex: vm-teste-windows
+
 Região             | Escolha a mais próxima de você
+
 Imagem (SO)        | Windows Server, Ubuntu, etc.
+
 Tamanho da VM      | Selecione um tipo (ex: B1s para testes, D2s para produção)
+
 Usuário/Admin      | Nome de usuário para acesso à VM
+
 Senha/Chave SSH    | Defina a senha ou configure uma chave SSH
 
 
