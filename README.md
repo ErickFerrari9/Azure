@@ -58,4 +58,79 @@ AZ-104: Administrador do Azure
 
 AZ-500: Segurança no Azure
 
+# 💻 PASSO A PASSO: CRIAÇÃO DE MÁQUINA VIRTUAL NO MICROSOFT AZURE
+🔹 1. Acessar o Portal Azure
+Acesse: https://portal.azure.com
+
+Faça login com sua conta Microsoft/Azure.
+
+🔹 2. Navegar até “Máquinas Virtuais”
+No menu à esquerda, clique em “Máquinas Virtuais”.
+
+Clique em “+ Criar” > “Máquina Virtual”.
+
+🔹 3. Configurar a Instância da VM (Aba “Básico”)
+Preencha os seguintes campos:
+
+##Campo            | O que preencher
+
+Assinatura         | Selecione sua conta/assinatura ativa
+Grupo de Recursos  | Crie um novo ou escolha um existente
+Nome da VM         | Ex: vm-teste-windows
+Região             | Escolha a mais próxima de você
+Imagem (SO)        | Windows Server, Ubuntu, etc.
+Tamanho da VM      | Selecione um tipo (ex: B1s para testes, D2s para produção)
+Usuário/Admin      | Nome de usuário para acesso à VM
+Senha/Chave SSH    | Defina a senha ou configure uma chave SSH
+
+
+# 🔹 4. Discos (Aba “Discos”)
+Escolha o tipo de disco para o sistema:
+
+SSD Padrão (bom custo-benefício)
+
+SSD Premium (melhor performance)
+
+Pode adicionar discos adicionais depois, se necessário.
+
+# 🔹 5. Rede (Aba “Rede”)
+Configure ou use uma rede virtual (VNet) existente.
+
+Se for um teste, pode manter as opções padrão.
+
+Habilite ou não IP público, dependendo da necessidade.
+
+Grupo de Segurança de Rede (NSG): use o padrão para abrir portas básicas (RDP/SSH).
+
+# 🔹 6. Gerenciamento (Opcional)
+Ative o monitoramento com Azure Monitor e Log Analytics, se quiser.
+
+Defina regras de desligamento automático (útil para economizar em ambientes de teste).
+# 🔹 7. Revisar + Criar
+A aba final “Revisar + criar” mostra um resumo da configuração.
+
+Verifique todos os campos e clique em “Criar”.
+
+# 🔹 8. Aguarde a Provisão
+Azure criará a VM e seus recursos associados (discos, IP, rede, etc.).
+
+Em alguns minutos, a VM estará pronta.
+
+# 🔹 9. Acessar a Máquina Virtual
+Vá para a VM criada.
+
+Clique em “Conectar”:
+
+Windows: Baixe o arquivo .RDP e conecte com usuário/senha.
+
+Linux: Use SSH com terminal (ex: ssh azureuser@IP_PUBLICO).
+
+# 🛠️ Dicas Extras
+🔐 Segurança: Após criar a VM, revise as regras NSG (Firewall) para expor apenas portas necessárias.
+
+💸 Custo: VMs são cobradas por tempo ligado! Desligue-as quando não estiver usando.
+
+📦 Snapshots e Backups: Configure backups automáticos se for produção.
+
+☁️ Script PowerShell ou CLI: Após dominar o portal, tente automatizar usando Azure CLI ou PowerShell.
 
